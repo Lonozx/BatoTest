@@ -281,7 +281,9 @@ html,
       justify-content: center;
       align-items: center;
     }
-
+    .avatar div p{
+        text-align: start;
+    }
     .swiper-slide img {
       /* display: block;
       width: 100%;
