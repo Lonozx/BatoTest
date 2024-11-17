@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background: #FAFAFA;
 }
 .wrapper main{
     display: flex;
