@@ -1,36 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bato</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/form.css">
-    <link rel="stylesheet" href="./styles/sections.css">
-</head>
+<?php
+/*
+Template Name: Шаблон главной страницы
+*/
+get_header();
+?>
 
-<body>
-    
-    <header>
-        <img class="logo" src="./images/Logo-AIE 1.png" alt="">
-        <div class="menu-section">
-        <ul class="menu">
-<li class="poppins-semibold">Menu</li>
-<li class="poppins-semibold">Menu</li>
-<li class="poppins-semibold">Menu</li>
-<li class="poppins-semibold">Menu</li>
-
-        </ul>
-        <div class="phone">
-            <img src="./images/phone.svg" alt="">
-            <span class="poppins-semibold">0596 76 38 18</span>
-        </div>
-    </div>
-    </header>
-    <div class="wrapper">
-    <main>
+<main>
         <section>
             <div class="headings">
                 <h2 class="poppins-semibold h2">What We Can do</h2>
@@ -38,17 +13,17 @@
             </div>
             <div class="items-shack">
                 <div class="item">
-                    <img src="./images/tack.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/tack.svg" alt="">
                     <p class="poppins-semibold">Web Development</p>
                     <p class="h4 poppins-regular" >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                 </div>
                 <div class="item">
-                    <img src="./images/piece.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/piece.svg" alt="">
                     <p class="poppins-semibold">Search Engine Optimization</p>
                     <p class="h4 poppins-regular" >Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum</p>
                 </div>
                 <div class="item">
-                    <img src="./images/screen.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/screen.svg" alt="">
                     <p class="poppins-semibold">Web Design</p>
                     <p class="h4 poppins-regular" >Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus.</p>
                 </div>
@@ -57,7 +32,7 @@
         
         <section>
             <div class="headings">
-                <h2 class="poppins-semibold h2">Testimonials</h2>
+                <h2 class="poppins-semibold h2"><?php the_field('home') ?></h2>
                 <p class="poppins-regular h3">Excepteur sint occaecat cupidatat non proident</p>
             </div>
             <div class="swiper mySwiper">
@@ -68,7 +43,7 @@
                         <!-- <p class="poppins-semibold">Web Development</p> -->
                         <p class="h4 poppins-regular" >Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
                         <div class="avatar">
-                            <img src="./images/Russel.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/Russel.png" alt="">
                             <div>
                                 <p class="poppins-semibold">Dianne Russell</p>
                                 <p class="poppins-light h5">Marketing Coordinator</p>
@@ -82,7 +57,7 @@
                         <!-- <p class="poppins-semibold">Web Development</p> -->
                         <p class="h4 poppins-regular" >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                         <div class="avatar">
-                            <img src="./images/Robert.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/Robert.png" alt="">
                             <div>
                                 <p class="poppins-semibold">Robert Johnson</p>
                                 <p class="poppins-light h5">Graphic Designer</p>
@@ -96,7 +71,7 @@
                         <!-- <p class="poppins-semibold">Web Development</p> -->
                         <p class="h4 poppins-regular" >Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                         <div class="avatar">
-                            <img src="./images/Floyd.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/Floyd.png" alt="">
                             <div>
                                 <p class="poppins-semibold">Floyd Miles</p>
                                 <p class="poppins-light h5">President of Sales</p>
@@ -110,7 +85,7 @@
                         <!-- <p class="poppins-semibold">Web Development</p> -->
                         <p class="h4 poppins-regular" >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                         <div class="avatar">
-                            <img src="./images/Robert.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/Robert.png" alt="">
                             <div>
                                 <p class="poppins-semibold">Robert Johnson</p>
                                 <p class="poppins-light h5">Graphic Designer</p>
@@ -124,7 +99,7 @@
                         <!-- <p class="poppins-semibold">Web Development</p> -->
                         <p class="h4 poppins-regular" >Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                         <div class="avatar">
-                            <img src="./images/Floyd.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/Floyd.png" alt="">
                             <div>
                                 <p class="poppins-semibold">Floyd Miles</p>
                                 <p class="poppins-light h5">President of Sales</p>
@@ -138,7 +113,7 @@
                         <!-- <p class="poppins-semibold">Web Development</p> -->
                         <p class="h4 poppins-regular" >Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
                         <div class="avatar">
-                            <img src="./images/Russel.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/Russel.png" alt="">
                             <div>
                                 <p class="poppins-semibold">Dianne Russell</p>
                                 <p class="poppins-light h5">Marketing Coordinator</p>
@@ -156,7 +131,7 @@
                     
                     <p class="h4 poppins-regular" >Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</p>
                     <div class="avatar">
-                        <img src="./images/Russel.png" alt="">
+                        <img src=".<?php echo get_template_directory_uri() ?>/images/Russel.png" alt="">
                         <div>
                             <p class="poppins-semibold">Dianne Russell</p>
                             <p class="poppins-light h5">Marketing Coordinator</p>
@@ -212,20 +187,23 @@
             </div>
             </div>
             <div>
-                <img style="width: 590px" src="./images/Image.png" alt="">
+                <img style="width: 590px" src="<?php echo get_template_directory_uri() ?>/images/Image.png" alt="">
             </div>
         </section>
-        <section style="width: 100vw;">
-            <div class="grow">
+        <section style="width: 100vw; position: relative;">
+            <div class="grow" style="background-image: url(<?php echo get_template_directory_uri() ?>/images/growbackground.png);" >
                 <h2 class="poppins-semibold">Grow Your Company Faster
                     Than Ever Before</h2>
-                    <button class="poppins-semibold">Contact Us</button>
+                    <button class="poppins-semibold pop">Contact Us</button>
             </div>
-        </section>
-        <section>
+        </section> 
+        <section class="popup">
             <div class="contact-form">
                 <form action="contact">
-                    <h2 class="poppins-extrabold">Contact Us</h2>
+                    <div class="head-con">
+                    <h2 class="poppins-extrabold cont">Contact Us</h2>
+                    <img class="cross" src="<?php echo get_template_directory_uri() ?>/images/cross.svg" alt="">
+                    </div>
                     <div class="name">
                     <input type="text" placeholder="First Name">
                     <input type="text" placeholder="Second Name">
@@ -242,18 +220,15 @@
                 </form>
             </div>
         </section>
-    </main>
-</div>
-    <!-- <footer>Footer</footer> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="./scripts/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script src="/js/script.js"></script> -->
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
@@ -279,5 +254,21 @@
     },
   });
 </script>
-</body>
-</html>
+<script>
+    let pop = document.querySelector('.pop');
+    let cross = document.querySelector('.cross');
+let popup = document.querySelector('.popup');
+
+pop.addEventListener('click', (e)=>{
+    console.log('check');
+    popup.classList.add('open');
+    
+})
+cross.addEventListener('click', (e)=>{
+    console.log('check');
+    popup.classList.remove('open');
+    
+})
+
+</script>
+<?php get_footer(); ?>

@@ -4,10 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    background: url("../images/Call\ to\ Action.png");
+    /* background: url("/images/Call\ to\ Action.png"); */
+    
+     background: url("<?php echo get_template_directory_uri() ?>/images/Call\ to\ Action.png");
     height: 421px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.avatar div p{
+    text-align: start;
 }
 .item{
     box-shadow: 10px 10px 5px 0px rgba(153,153,153,0.27);
@@ -36,6 +41,7 @@
 .items-shack{
     display: flex;
     gap: 32px;
+    justify-content: center;
 }
 .swiper-slide .item{
     /* box-shadow: none;
@@ -281,9 +287,7 @@ html,
       justify-content: center;
       align-items: center;
     }
-    .avatar div p{
-        text-align: start;
-    }
+
     .swiper-slide img {
       /* display: block;
       width: 100%;
